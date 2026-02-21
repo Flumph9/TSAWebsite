@@ -1,5 +1,5 @@
 Run:
-cd osm_fastapi_project_v2
+cd TSAWebsite
 pip install -r requirements.txt
 uvicorn main:app --reload
 

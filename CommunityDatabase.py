@@ -357,4 +357,22 @@ async def read_school(school_id: int):
         if school is None:
             return {"error": "School not found"}
         return school
+    
+@app.get("/all_resources/")
+def all_resources():
+    with Session(engine) as session:
+
+        restaurants = session.exec(select(Restaurant)).all()
+        grocery_stores = session.exec(select(GroceryStore)).all()
+        gas_stations = session.exec(select(GasStation)).all()
+        community_services = session.exec(select(CommunityService)).all()
+        schools = session.exec(select(School)).all()
+
+        return {
+            "restaurants": restaurants,
+            "grocery_stores": grocery_stores,
+            "gas_stations": gas_stations,
+            "community_services": community_services,
+            "schools": schools
+        }   
 

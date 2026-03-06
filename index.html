@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Springville Community Resource Hub</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>Springville Community Resource Hub</h1>
+
+      <p class="intro">
+        Browse restaurants, grocery stores, gas stations, schools, and services in Springville.
+      </p>
+
+      <h2>Search Resources</h2>
+      <input id="searchBox" placeholder="Search by name">
+
+      <div id="buttons"></div>
+
+      <p id="loading">Loading resources...</p>
+
+      <div id="results"></div>
+
+      <hr>
+
+      <h2>Featured Community Resources</h2>
+
+      <div class="featured-container">
+        <div class="card highlight">
+          <div class="card-title">Springville Public Library</div>
+          <p>Free books, internet access, and community programs.</p>
+        </div>
+
+        <div class="card highlight">
+          <div class="card-title">Springville Police Department</div>
+          <p>Local law enforcement and safety services.</p>
+        </div>
+
+        <div class="card highlight">
+          <div class="card-title">Springville High School</div>
+          <p>Public high school serving Springville students.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h2>Suggest a Resource</h2>
+
+      <form id="resourceForm">
+        <input id="resourceName" placeholder="Resource Name" required>
+        <input id="resourceType" placeholder="Type">
+        <input id="resourceAddress" placeholder="Address">
+        <input id="resourceWebsite" placeholder="Website">
+        <button type="submit">Submit</button>
+      </form>
+
+      <p id="formStatus"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>

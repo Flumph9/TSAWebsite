@@ -1,0 +1,175 @@
+/* Page background */
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6fb;
+    margin:0;
+}
+
+
+/* Centered page container */
+
+.page{
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+
+
+/* Title */
+
+h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+
+/* Intro */
+
+.intro{
+    text-align:center;
+    color:#555;
+}
+
+
+/* Section headers */
+
+h2{
+    margin-top:40px;
+    border-bottom:2px solid #e3e6ef;
+    padding-bottom:6px;
+}
+
+
+/* Search box */
+
+#searchBox{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:6px;
+    border:1px solid #ccc;
+}
+
+
+/* Buttons */
+
+button{
+    background:#4c73ff;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    margin:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3558d4;
+}
+
+
+/* Button container */
+
+#buttons{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+
+/* Results grid */
+
+#results{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+}
+
+
+/* Resource cards */
+
+.card{
+    background:white;
+    border-radius:8px;
+    border:1px solid #e3e6ef;
+    padding:16px;
+    width:260px;
+    min-height:140px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-shadow:0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+/* Card title */
+
+.card-title{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+
+/* Dropdown details */
+
+.details{
+    display:none;
+    margin-top:10px;
+    padding-top:10px;
+    border-top:1px solid #eee;
+}
+
+
+/* Featured resources layout */
+
+.featured-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+
+/* Highlight cards */
+
+.highlight{
+    border-left:5px solid #4c73ff;
+    background:#f6f8ff;
+}
+
+
+/* Loading text */
+
+#loading{
+    display:none;
+    text-align:center;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+
+/* Forms */
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+form input{
+    padding:8px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+
+/* Divider */
+
+hr{
+    margin:40px 0;
+}
